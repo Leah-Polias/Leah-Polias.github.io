@@ -1,0 +1,58 @@
+/*Mobile*/
+@media only screen and (max-width: 750px) { 
+.wrapper {
+	width:100%;
+	display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'main main main main main'
+        'navigation navigation navigation navigation navigation';
+    grid-template-columns: 20% 20% 20% 20% 20%;}
+.navigation {display:none;}
+.nav-link-mobile {display:block;}
+.badge {display:none;}
+.main {margin-right:5px; margin-left:5px;}
+/*Carrot Cake page*/
+.CarrotCake h1	{text-align:center;}
+.image-link {display:flex; flex-direction:column; align-items:center; justify-content:center;}
+.image-link p {margin-top:5px; margin-bottom:5px; font-size: 15px;}
+.remove-space {padding-left:30px;}
+/*Pan page*/
+.pan-text {text-align:center;}
+.pan-image-name-link {display:flex; align-items:center; flex-direction:column;}
+.pan-image-name-link h3 {text-align:center; margin-top:5px; margin-bottom:5px;}
+.pan-image-name-link p {text-align:center; margin:0px; font-size:13px;}
+.morePans {justify-content:center;}
+}
+
+/*Larger than mobile*/
+@media only screen and (min-width: 751px) {
+.split {display:none;}
+.nav-link-mobile {display:none;}
+.badge {display:block;}
+}
+
+/*Tablet*/
+@media only screen and (max-width:1023px) and (min-width:751px) {
+.sideBar{width:135px;}
+.navigation li {width:130px;}
+.navigation li:hover ul li {width:130px; font-size:17px;}
+.main {margin-left:20px;}
+/*Pan page*/
+.morePans {justify-content:center;}
+}
+
+/*Small laptop*/
+@media only screen and (min-width: 1024px) and (max-width:1439px) {
+.navigation li {width:199px;}
+.navigation li:hover ul li {width:199px;}
+}
+
+/*Huge screen*/
+@media only screen and (min-width: 2000px) {
+.navigation li {width:300px;}
+.navigation li:hover ul li {width:300px;}
+.wrapper {grid-template-columns: 20% 20% 20% 20% 20%;} /*Make all the rest be the whole screen minus 315px.*/
+.sideBar {width:300px;}
+}
+

@@ -1,0 +1,104 @@
+/*----Fonts----*/
+@font-face {
+  font-family: Anton-Regular;
+  src: url("../Fonts/Anton-Regular.ttf");
+}
+
+/*----Animations----*/
+@keyframes changecolor {
+  0%   {color:red;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  75%  {color:green;}
+  100% {color:red;}
+}
+
+/*----All Pages----*/
+html {margin:0px; height:100%;}
+body {width:99%; margin:5px 5px 10px; height:100%; background-image:url("../Images/Background.gif"); color:#d82018;}
+.margin-left{margin-left:7px}
+.redLine {width:100%; height:50px; background-image:url("../Images/Line-Top.gif"); margin-bottom:5px;}
+.logo {width:100%; height:100px; background-image:url("../Images/Logo.png"); background-repeat:no-repeat; background-position:center;}
+.link {text-decoration:none; color:red;}
+
+/*----Carrot Cake Page----*/
+.wrapper {display:grid;
+    grid-template-areas:
+        'header header header header header'
+        'navigation navigation navigation navigation navigation'
+        'sidebar main main main main'
+        'sidebar footer footer footer footer';
+    grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto auto 1fr auto;}
+.header {grid-area:header;}
+.navigation {grid-area:navigation;}
+.sideBar {grid-area:sidebar; background-color:#d82018; width:150px; height:100vh-224.8;}
+.main {grid-area:main; margin-left:10px; height:100vh-224.8;}
+.badge {position:fixed; bottom:10px; right:10px; width:100px;}
+.badgeMobile {position:fixed; bottom:10px; right:10px; width:80px; height:auto;}
+.CarrotCake h1	{color:#d82018;}
+.split {background-color:#d82018; width:100%; height:1px;}
+.navigation 
+{
+	background-image:none;
+	background-color:#d82018;
+	transition: background-color 1s;
+	color:black; 
+	margin-bottom:0px; 
+	text-align:center; 
+	padding:0px; 
+	list-style:none;
+	}
+.navigation:hover {background-color:red;}
+.navigation li {display:inline-block; font-size:25px; padding-top:10.5px; padding-bottom:10.5px; width:250px;}
+.navigation li a {text-decoration:none; color:black;}
+.navigation li:hover a {color:white;}
+.navigation li ul {display:none;}
+.navigation li:hover ul 
+{
+	margin-top:10.5px; 
+	display:block; 
+	background-color:#d82018; 
+	position:absolute; 
+	padding-left:0px; 
+	padding-bottom:3px; 
+	list-style:none;
+	}
+.navigation li:hover ul li 
+{
+	display:block; 
+	background-color:#d82018; 
+	padding-top:5px; 
+	padding-bottom:5px; 
+	width:250px;
+	} 
+.navigation li:hover ul li a {color:black;}
+.navigation li ul li:hover a {color:white;}
+.contactUs {order:2;}
+.CarrotCake table {border:1px solid;}
+.CarrotCake th {text-align:center; border-bottom:1px solid;}
+.CarrotCake td {border-top:1px solid;}
+.top {border-top:none!important;}
+.first {border-right:1px solid;}
+
+/*----Pan Page----*/
+.panImage {width:250px; height:auto; border-radius:15px;}
+.Pan ul li {list-style:none;}
+.oldPrice {text-decoration:line-through;}
+.morePans {display:flex; flex-wrap:wrap; justify-content:start; align-items:center;}
+.morePans div {margin:10px;}
+.morePans img {border:3px solid red;}
+
+/*----Recipes Page----*/
+.Recipes li {list-style:none;}
+.Recipes a {color:black;}
+
+/*----Coming Soon Page----*/
+.ComingSoon {background-image:url("../Images/Confetti.jpg"); background-size:cover; background-repeat:no-repeat;}
+.text {display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh;}
+.text {animation-name: changecolor; animation-duration: 4s; animation-delay: 1s;}
+.ComingSoon h1 {font-size:130px; font-family:Anton-Regular; margin:0px;}
+.ComingSoon h4 {font-size:50px; margin:0px;}
+
+/*----Contact Us Page----*/
+.submit {margin:10px; padding:5px; font-size:15px; background-color:gray;}
