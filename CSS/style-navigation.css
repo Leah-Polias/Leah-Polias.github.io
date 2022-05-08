@@ -1,6 +1,6 @@
-body {width:99%; margin:auto; margin-top:5px; margin-bottom:10px; background-image:url("../Images/Background.gif"); color:#d82018;}
-.redLine {width:100%; height:50px; background-image:url("../Images/Line-Top.gif"); margin-bottom:5px;}
-.logo {width:100%; height:100px; background-image:url("../Images/Logo.png"); background-repeat:no-repeat; background-position:center;}
+body {width:99%; margin:auto; margin-top:5px; margin-bottom:10px; background-image:url("../images/Background.gif"); color:#d82018;}
+.redLine {width:100%; height:50px; background-image:url("../images/Line-Top.gif"); margin-bottom:5px;}
+.logo {width:100%; height:100px; background-image:url("../images/Logo.png"); background-repeat:no-repeat; background-position:center;}
 .navigation {background-color:#d82018; padding-left:0px;}
 .navigation li {padding-top:25px; padding-bottom:25px; font-size:20px; text-align:center;}
 a {text-decoration:none; color:black; font-size:20px; font-family: 'Titillium Web', sans-serif; padding-top:5px; padding-bottom:5px;}

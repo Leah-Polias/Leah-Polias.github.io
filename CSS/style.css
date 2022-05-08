@@ -1,7 +1,7 @@
 /*----Fonts----*/
 @font-face {
   font-family: Anton-Regular;
-  src: url("../Fonts/Anton-Regular.ttf");
+  src: url("../fonts/anton-regular.ttf");
 }
 
 /*----Animations----*/
@@ -15,10 +15,10 @@
 
 /*----All Pages----*/
 html {margin:0px; height:100%;}
-body {width:99%; margin:5px 5px 10px; height:100%; background-image:url("../Images/Background.gif"); color:#d82018;}
+body {width:99%; margin:5px 5px 10px; height:100%; background-image:url("../images/Background.gif"); color:#d82018;}
 .margin-left{margin-left:7px}
-.redLine {width:100%; height:50px; background-image:url("../Images/Line-Top.gif"); margin-bottom:5px;}
-.logo {width:100%; height:100px; background-image:url("../Images/Logo.png"); background-repeat:no-repeat; background-position:center;}
+.redLine {width:100%; height:50px; background-image:url("../images/Line-Top.gif"); margin-bottom:5px;}
+.logo {width:100%; height:100px; background-image:url("../images/Logo.png"); background-repeat:no-repeat; background-position:center;}
 .link {text-decoration:none; color:red;}
 
 /*----Carrot Cake Page----*/
@@ -94,7 +94,7 @@ body {width:99%; margin:5px 5px 10px; height:100%; background-image:url("../Imag
 .Recipes a {color:black;}
 
 /*----Coming Soon Page----*/
-.ComingSoon {background-image:url("../Images/Confetti.jpg"); background-size:cover; background-repeat:no-repeat;}
+.ComingSoon {background-image:url("../images/Confetti.jpg"); background-size:cover; background-repeat:no-repeat;}
 .text {display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh;}
 .text {animation-name: changecolor; animation-duration: 4s; animation-delay: 1s;}
 .ComingSoon h1 {font-size:130px; font-family:Anton-Regular; margin:0px;}
