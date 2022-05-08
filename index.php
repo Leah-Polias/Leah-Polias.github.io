@@ -1,5 +1,6 @@
 <?php include "includes/header.php"; ?>
 	<!--Decide what colour all text should be in. For diff size screens it could be diff, eg heading could be different because sometimes there is black on nav and sometimes not.-->
+	<div id="page">
 	<h1>Carrot Sheet Cake</h1>
 	<div class='image-link'>
 	<img src="./images/Cake.jpg" alt="Carrot Cake" width="250px" height="auto">
@@ -63,6 +64,31 @@
 	<tr> <td>29g sugars, 1g fiber</td> </tr>
 	<tr> <td class="first">Protein</td> <td>4g</td> </tr>
 	</table>
+	<button onclick="ounces2grams();">Convert grams to ounces</button>
+</div>
+
+	<script>
+		var age = prompt("How old are you?","age");
+		if (age >=13)
+			alert("Good Luck!");
+		else {
+			document.getElementById("page").innerHTML = "<h1>Sorry, you are too young for this website</h1>";
+			document.getElementById("page").style.fontSize = "20px"; 
+			document.getElementById("page").style.color = "blue"; 
+			document.getElementById("page").style.textAlign = "center"; 
+		}
+
+		function ounces2grams()
+		{
+			var grams = prompt("How many grams do you want to convert?", "grams");
+			if (grams != null) 
+			{
+				var ounces = grams/28.35;
+				alert("That is "+ounces.toFixed(2)+" ounces");
+			}
+		}
+	</script>
+
 <?php include "includes/footer.php"; ?>
 
 
